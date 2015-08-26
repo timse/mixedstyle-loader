@@ -8,7 +8,7 @@ module.exports = function(content) {return content};
 module.exports.pitch = function(remainingRequest){
     if(this.cacheable) this.cacheable();
     if (/style-loader/.test(remainingRequest)) {
-        remainingRequest = remainingRequest.replace(/[^!]*style-loader[^!]*!?/, '');
+        remainingRequest = remainingRequest.replace(/[^!]*\Wstyle-loader\W[^!]*!?/, '');
         return 'module.exports = require("!!' + remainingRequest + '");';
     }
 };
