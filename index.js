@@ -32,10 +32,3 @@ module.exports = function(content) {
     return prepareExport(res);
 }
 module.exports.raw = true;
-//module.exports.pitch = function(remainingRequest){
-//    if(this.cacheable) this.cacheable();
-//    if (/style-loader/.test(remainingRequest)) {
-//        remainingRequest = remainingRequest.replace(/[^!]*style-loader[^!]*!?/, '');
-//        return 'module.exports = require("!!' + remainingRequest + '");';
-//    }
-//};
