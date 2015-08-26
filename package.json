@@ -1,0 +1,13 @@
+{
+  "name": "mixedstyle-loader",
+  "version": "0.0.1",
+  "author": {
+    "name": "Tim Sebastian @timse"
+  },
+  "description": "loads mixed style imports e.g. sass/css/stylus from one file while maintaining their order",
+  "dependencies": {
+    "loader-utils": "0.2.x",
+    "parse-import": "^2.0.0"
+  },
+  "license": "MIT"
+}
